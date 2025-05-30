@@ -11,37 +11,51 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "eUkR5oCs9m09xjexX",
+        });
+      })();
+    </script>
     <title>Portfolio LakoniDewe</title>
   </head>
   <body>
     <!-- Navbar -->
     <nav
-      class="px-20 py-4 flex flex-row justify-between bg-[#131313] text-white font-medium items-center"
+      class="px-5 md:px-20 py-4 flex flex-row justify-between bg-[#131313] text-white font-medium items-center"
     >
-      <div class="basis-1/2 text-2xl">
+      <div class="basis-1/2 text-lg md:text-2xl">
         <a href="#"><span class="text-[#7456FF]">Lakoni</span>Dewe</a>
       </div>
-      <div class="flex flex-row basis-1/2 items-center justify-end text-xl">
-        <a href="#" class="p-1 mx-5">Home</a>
-        <a href="#" class="p-1 mx-5">About</a>
-        <a href="#project" class="p-1 mx-5">Project</a>
+      <div
+        class="flex flex-row basis-1/2 items-center justify-end text-xs sm:text-sm md:text-xl"
+      >
+        <a href="#" class="p-1 mx-1 md:mx-5">About</a>
+        <a href="#project" class="p-1 mx-1 md:mx-5">Project</a>
         <a
           href="#contact"
           class="border-2 p-2 mx-4 rounded-sm border-[#7456FF] text-[#7456FF]"
-          >Contact Me</a
+          >Contact</a
         >
       </div>
     </nav>
 
     <!-- LandingPage -->
-    <div class="px-20 pt-10 flex flex-row bg-[#0F0F0F] text-white">
+    <div
+      class="px-5 md:px-20 pt-10 flex flex-col-reverse md:flex-row bg-[#0F0F0F] text-white"
+    >
       <div class="basis-1/2 flex flex-col mt-5">
-        <h1 class="text-4xl font-bold my-3">
+        <h1 class="text-2xl md:text-4xl font-bold my-3">
           I am <span class="text-[#7456FF]">Dwipayana Ismulya</span>
         </h1>
-        <p class="text-[#999999]">Frontend Developer</p>
+        <p class="text-[#999999] text-md md:text-lg">Frontend Developer</p>
         <p class="border-b-3 mt-10 border-[#999999]" style="width: 20%"></p>
-        <p class="mt-3 mb-7 text-[#999999] text-justify">
+        <p class="mt-3 mb-7 text-[#999999] text-justify sm:text-sm md:text-lg">
           I'm a Frontend developer with a strong passion for layout design and
           visual aesthetics. I believe that a well-crafted interface plays a
           crucial role in shaping product branding and user perception. In
@@ -51,7 +65,7 @@
           to complement my Frontend development capabilities, particularly for
           responsive web and dynamic application interfaces.
         </p>
-        <div class="flex flex-row mt-4">
+        <div class="flex flex-row mt-1 mb-4 md:mb-0 md:mt-4">
           <a
             href=""
             class="w-3xs px-1 py-3 rounded-sm flex flex-row bg-[#7456FF] items-center font-medium justify-center"
@@ -75,14 +89,22 @@
       </div>
     </div>
     <div
-      class="px-20 pb-5 flex flex-row justify-end items-center bg-[#0F0F0F] text-white"
+      class="px-5 md:px-20 pb-5 flex flex-row justify-end items-center bg-[#0F0F0F] text-white"
     >
       <div class="flex flex-row justify-between items-center w-md">
-        <p class="font-semibold text-lg">Find Me On</p>
-        <img src="assets/facebook.png" alt="" />
-        <img src="assets/instagram.png" alt="" />
+        <p class="font-medium md:font-semibold text-md md:text-lg">
+          Find Me On
+        </p>
+        <a href="https://www.facebook.com/dwipayana.ismulya?locale=id_ID">
+          <img src="assets/facebook.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/_dwiimulya02/"
+          ><img src="assets/instagram.png" alt=""
+        /></a>
         <img src="assets/whatsapp.png" alt="" />
-        <img src="assets/linkedin.png" alt="" />
+        <a href="https://www.linkedin.com/in/dwipayana-ismulya-06a071246/">
+          <img src="assets/linkedin.png" alt="" />
+        </a>
       </div>
     </div>
 
@@ -90,7 +112,9 @@
     <div
       class="flex flex-row py-4 justify-center items-center bg-[url(/assets/backgroundport.png)]"
     >
-      <div class="flex flex-row justify-center items-center text-white">
+      <div
+        class="flex flex-col md:flex-row justify-center items-center text-white"
+      >
         <div
           class="border-1 border-white w-[200px] h-[180px] bg-[#131313] border-dashed rounded-sm flex flex-col items-center justify-center mx-2 my-8"
         >
@@ -121,58 +145,182 @@
     <!-- Project -->
     <div
       id="project"
-      class="px-20 py-10 bg-[#0F0F0F] text-white flex flex-col justify-center items-center"
+      class="px-5 md:px-20 py-10 bg-[#0F0F0F] text-white flex flex-col justify-center items-center"
     >
       <div class="h-[100px] flex items-center py-10">
         <h1 class="text-3xl font-bold">Latest Project</h1>
       </div>
       <div
-        class="flex flex-row items-center w-[100%] h-[250px] px-10 bg-[#131313] my-4"
+        class="flex flex-col bg-[#131313] md:flex-row items-center w-[100%] h-[250px] px-5 md:px-10 my-4"
       >
-        <div class="flex justify-center items-center me-10">
-          <div class="w-[320px] h-[190px] bg-white rounded-sm"></div>
+        <div class="flex justify-center items-center mb-4 md:me-10">
+          <div class="w-[280px] md:w-[320px]">
+            <img
+              src="https://dwipayana-ismulya.vercel.app/assets/Project-2-xSbcJSu6.png"
+              alt=""
+              class="rounded-sm"
+            />
+          </div>
         </div>
         <div class="flex flex-row justify-between items-center w-[100%]">
-          <h1 class="text-2xl font-semibold">Perpustakaan Apps</h1>
-          <a href="" class="bg-[#7456FF] px-5 py-3 rounded-sm text-lg"
+          <div class="flex flex-col">
+            <h1 class="text-sm font-semibold md:text-2xl md:font-semibold">
+              MovieList Apps
+            </h1>
+            <p class="mt-2 text-xs md:text-lg text-justify">
+              MovieList adalah website pencari film yang dibuat menggunakan
+              teknologi React.JS
+            </p>
+          </div>
+          <a
+            href=""
+            class="bg-[#7456FF] ms-2 md:ms-0 px-2 py-1 md:px-5 md:py-3 rounded-sm text-xs md:text-lg"
             >View Details</a
           >
         </div>
       </div>
       <div
-        class="flex flex-row items-center w-[100%] h-[250px] px-10 bg-[#131313] my-4"
+        class="flex flex-col md:flex-row items-center w-[100%] h-[250px] px-5 md:px-10 bg-[#131313] my-4"
       >
-        <div class="flex justify-center items-center me-10">
-          <div class="w-[320px] h-[190px] bg-white rounded-sm"></div>
+        <div class="flex justify-center items-center mb-4 md:me-10">
+          <div class="w-[280px] md:w-[320px]">
+            <img
+              src="https://dwipayana-ismulya.vercel.app/assets/Project-7-tQugVv8U.png"
+              alt=""
+              class="rounded-sm"
+            />
+          </div>
         </div>
         <div class="flex flex-row justify-between items-center w-[100%]">
-          <h1 class="text-2xl font-semibold">Digilearn Academy</h1>
-          <a href="" class="bg-[#7456FF] px-5 py-3 rounded-sm text-lg"
+          <div class="flex flex-col">
+            <h1 class="text-sm font-semibold md:text-2xl md:font-semibold">
+              Digilearn Academy
+            </h1>
+            <p class="mt-2 text-xs md:text-lg text-justify">
+              Digilearn Academy adalah platform pembelajaran coding bagi
+              pengguna.
+            </p>
+          </div>
+          <a
+            href=""
+            class="bg-[#7456FF] ms-2 md:ms-0 px-2 py-1 md:px-5 md:py-3 rounded-sm text-xs md:text-lg"
             >View Details</a
           >
         </div>
       </div>
       <div
-        class="flex flex-row items-center w-[100%] h-[250px] px-10 bg-[#131313] my-4"
+        class="flex flex-col md:flex-row items-center w-[100%] h-[250px] px-5 md:px-10 bg-[#131313] my-4"
       >
-        <div class="flex justify-center items-center me-10">
-          <div class="w-[320px] h-[190px] bg-white rounded-sm"></div>
+        <div class="flex justify-center items-center mb-4 md:me-10">
+          <div class="w-[280px] md:w-[320px]">
+            <img
+              src="https://dwipayana-ismulya.vercel.app/assets/Project-1-ndGxopKe.png"
+              alt=""
+              class="rounded-sm"
+            />
+          </div>
         </div>
         <div class="flex flex-row justify-between items-center w-[100%]">
-          <h1 class="text-2xl font-semibold">Movie List</h1>
-          <a href="" class="bg-[#7456FF] px-5 py-3 rounded-sm text-lg"
+          <div class="flex flex-col">
+            <h1 class="text-sm font-semibold md:text-2xl md:font-semibold">
+              Sewa Rental Mobil
+            </h1>
+            <p class="mt-2 text-xs md:text-lg text-justify">
+              Sewa Rental Mobil merupakan website slicing informasi mengenai
+              penyewaan mobil.
+            </p>
+          </div>
+          <a
+            href=""
+            class="bg-[#7456FF] ms-2 md:ms-0 px-2 py-1 md:px-5 md:py-3 rounded-sm text-xs md:text-lg"
             >View Details</a
           >
         </div>
       </div>
     </div>
-    <!-- Offering -->
 
     <!-- HireMe -->
-
+    <div class="px-5 md:px-20 py-10 bg-[#393939] text-white flex flex-col">
+      <form class="flex flex-row my-10" action="" id="contact">
+        <div class="basis-1/1 md:basis-1/2 flex flex-col">
+          <h3 class="text-3xl font-bold mb-5 text-center md:text-start">
+            Contact Me
+          </h3>
+          <div class="flex flex-col">
+            <label
+              class="text-lg text-[#999999] font-medium mb-3 mt-2"
+              for="name"
+              >Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="md:w-[70%] bg-[#fff] text-black px-3 py-1"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              class="text-lg text-[#999999] font-medium mb-3 mt-2"
+              for="email"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="md:w-[70%] bg-[#fff] text-black px-3 py-1"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              class="text-lg text-[#999999] font-medium mb-3 mt-2"
+              for="subject"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="md:w-[70%] bg-[#fff] text-black px-3 py-1"
+              required
+            />
+          </div>
+          <div class="flex flex-col">
+            <label
+              class="text-lg text-[#999999] font-medium mb-3 mt-2"
+              for="message"
+              >Message</label
+            >
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              class="md:w-[70%] bg-[#fff] text-black px-3 py-1"
+              rows="4"
+              required
+            >
+            </textarea>
+          </div>
+          <div class="flex flex-col">
+            <button
+              class="bg-[#7456FF] rounded-sm md:w-[70%] my-4 py-2 cursor-pointer text-lg font-semibold"
+              type="submit"
+              onclick="sendMail()"
+            >
+              Send
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
     <!-- Footer -->
-    <div class="px-20 py-15 flex flex-row bg-[#131313] text-white" id="contact">
-      <div class="w-[50%]">
+    <div
+      class="px-5 md:px-20 py-15 flex flex-col md:flex-row bg-[#131313] text-white"
+    >
+      <div class="md:w-[50%]">
         <h2 class="text-3xl font-semibold mt-8 mb-4">Get In Touch</h2>
         <p class="text-[#999999] my-8">
           For business and partnership inquiry please contact me below!
@@ -192,9 +340,12 @@
           </div>
         </div>
       </div>
-      <div class="w-[50%] flex items-center justify-end">
-        <img src="assets/Vector.png" alt="" />
+      <div
+        class="mt-10 md:mt-0 md:w-[50%] flex items-center justify-center md:justify-end"
+      >
+        <img src="assets/Vector.png" alt="" class="w-[80%]" />
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
